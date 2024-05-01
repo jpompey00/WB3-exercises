@@ -1,4 +1,17 @@
 "use strict";
+window.onload = init;
+
+//textboxes
+const partCodeTextBox = document.getElementById("partCodeTextBox");
+const partCodeOutputTextBox = document.getElementById("partCodeOutputTextBox");
+
+//button
+const partCodeSubmitButton = document.getElementById("partCodeSubmitButton");
+
+function init(){
+
+    partCodeSubmitButton.onclick = onPartCodeSubmitButtonClicked;
+}
 
 
 //test variables
@@ -48,4 +61,9 @@ return `The ${sizeExpanded} part ${productNumber} is supplied by ${supplier}`;
 }
 
 
-console.log(outputPartInfo([productCode0]));
+function onPartCodeSubmitButtonClicked(){
+    let productCode = partCodeTextBox.value;
+    partCodeOutputTextBox.innerHTML = outputPartInfo(productCode);
+
+
+}
