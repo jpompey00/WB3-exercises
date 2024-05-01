@@ -13,7 +13,7 @@ if (fullName.indexOf(" ") == fullName.lastIndexOf(" ") && fullName.indexOf(" ") 
 
 
 } else if (fullName.indexOf(" ") == -1) { //if there is no space then there is 1 name
-    // console.log(`Only Name: ${fullName}`);
+    console.log(`Only Name: ${fullName}`);
 
 } else { //only thing to account for left is there being 3 names
     firstName = fullName.substring(0, fullName.indexOf(" "));
