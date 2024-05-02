@@ -5,7 +5,6 @@ let currentTime = new Date();
 
 
 
-// console.log(currentTime);
 console.log(formatDate(currentTime));
 
 
@@ -15,7 +14,6 @@ function formatDate(currentDate){
     let year= currentDate.getFullYear();
     let weekdayNumber = currentDate.getDay();
 
-    //console.log(month);\
     const monthsArray = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
     const daysArray = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
