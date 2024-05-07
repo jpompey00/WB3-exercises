@@ -6,6 +6,9 @@ let fullName = "Julian Alexander Pompey";
 let firstName;
 let middleName;
 let lastName;
+
+
+
 if (fullName.indexOf(" ") == fullName.lastIndexOf(" ") && fullName.indexOf(" ") != -1) { 
     firstName = fullName.substring(0, fullName.indexOf(" "));
     lastName = fullName.substring(fullName.indexOf(" ") + 1);
